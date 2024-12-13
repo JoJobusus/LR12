@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контроль вивчення іноземної мови</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Контроль вивчення іноземної мови</h1>
+        <div id="difficultySelection">
+            <label for="difficulty">Оберіть рівень складності:</label>
+            <select id="difficulty">
+                <option value="easy">Легкий</option>
+                <option value="medium">Середній</option>
+                <option value="hard">Складний</option>
+            </select>
+            <button id="startButton">Почати</button>
+        </div>
+        <div id="progress" style="display: none;">
+            <p>Крок: <span id="currentStep">1</span> / <span id="totalSteps">10</span></p>
+            <p>Правильно: <span id="correctCount">0</span>, Неправильно: <span id="incorrectCount">0</span></p>
+        </div>
+        <div id="cardContainer" style="display: none;">
+            <div id="card">
+                <p id="word"></p>
+                <input type="text" id="translationInput" placeholder="Введіть переклад...">
+                <button id="checkButton">Перевірити</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
